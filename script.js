@@ -36,3 +36,6 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.setProperty('display', 'none', 'important');
 }
+
+const x = window.innerWidth
+console.log(x)

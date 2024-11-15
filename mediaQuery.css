@@ -70,26 +70,55 @@
         align-items: center;
         justify-content: center;
     }
+
     .hero_btn{
         width: 15%;
     }
+
+    .collection{
+        background-color: green;
+        height: 85vh;
+    }
+
+    .fl ul li a{
+        letter-spacing: 0;
+    }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1262px){
     .header_container{
-        padding: 30px;
+        padding: 0px;
         background-color: yellow;
     }
 
-    .searchBar{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0 20px;
+    .collection{
+        background-color: green;
+        height: 90vh;
     }
-    .hero_btn{
-        width: 19%;
+
+    .footer_right{
+        width: 35%;
+    }
+
+    .fl ul li a{
+        letter-spacing: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 1150px){
+    .header_container{
+        padding: 0px;
+        background-color: blue;
+    }
+
+    .collection{
+        background-color: green;
+        height: 90vh;
+    }
+
+    .footer_links{
+        width: 60%;
     }
 }
 
