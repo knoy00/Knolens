@@ -149,3 +149,14 @@
     }
     
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-user {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+}
