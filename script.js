@@ -39,3 +39,10 @@ function hideSidebar(){
 
 const x = window.innerWidth
 console.log(x)
+
+const hamburger = document.getElementById("hamburger");
+const sidebar = document.querySelector('.side_menu');
+
+hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('show');
+});
