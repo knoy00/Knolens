@@ -45,3 +45,11 @@ const sidebar = document.querySelector('.side_menu');
 hamburger.addEventListener('click', () => {
     sidebar.classList.toggle('show');
 });
+
+
+const close = document.getElementById("close");
+const message = document.querySelector('.message');
+
+close.addEventListener('click', () => {
+    message.style.display = 'none';
+});
