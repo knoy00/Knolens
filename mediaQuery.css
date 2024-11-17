@@ -636,7 +636,6 @@
     }
 
     .categories_top h2, .collection_top h2, .shop_top h2{
-       background-color: blue;
        text-align: center;
        font-size: 24px;
     }
@@ -657,14 +656,14 @@
     }
 
     .collection{
-        height: 215vh;
+        height: 225vh;
 
     }
 
     .collection_item{
         display: flex;
         flex-direction: column;
-        border: 1px solid #c3c3c3;
+        border: 1px solid #e3e3e3;
 
     }
 
@@ -678,7 +677,7 @@
     }
 
     .shop{
-        height: 195vh;
+        height: 210vh;
         padding: 20px;
     }
 
@@ -686,6 +685,8 @@
         font-size: 18px;
         width: 80%;
         height: 45px;
+        display: flex;
+        align-items: center;
        
     }
 
@@ -702,6 +703,7 @@
     .carousel_section{
         padding: 20px;
         height: 100vh;
+        padding-top: 50px
     }
 
     .carousel_content{
@@ -729,5 +731,61 @@
         height: 100%;
         object-fit: cover;
     }
+    
+    .footer{
+        padding: 60px 20px;
+        height: 140vh;
+    }
+
+    .footer_content{
+        display: flex;
+        flex-direction: column; 
+        gap: 250px;
+    }
+
+    .footer_links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+       
+    }
+
+    .info--links, .resources--links, .contact--links{
+       width: 100%;
+    }
+
+    .fl{
+        padding: 0;
+        margin: 0;
+    }
+
+    .fl h2{
+        text-align: left;
+        font-size: 26px;
+    }
+
+    .fl ul{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .footer_right{
+        margin-top: 60px;
+    }
+
+    .subscribe_input button{
+        width: 30%;
+        right: 55px;
+    }
+
+    .footer_logo h1{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+
 
 }
