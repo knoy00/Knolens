@@ -635,6 +635,12 @@
         text-align: center;
     }
 
+    .categories_top h2, .collection_top h2, .shop_top h2{
+       background-color: blue;
+       text-align: center;
+       font-size: 24px;
+    }
+
     .category_item{
         height: 37vh;
 
@@ -651,14 +657,14 @@
     }
 
     .collection{
-        height: 200vh;
+        height: 215vh;
 
     }
 
     .collection_item{
         display: flex;
         flex-direction: column;
-        border: 1px solid rgb(119, 119, 119);
+        border: 1px solid #c3c3c3;
 
     }
 
@@ -676,6 +682,13 @@
         padding: 20px;
     }
 
+    .shop_item_header h2{
+        font-size: 18px;
+        width: 80%;
+        height: 45px;
+       
+    }
+
     .video{
         height: 32vh;
     }
@@ -688,7 +701,7 @@
 
     .carousel_section{
         padding: 20px;
-        height: 70vh;
+        height: 100vh;
     }
 
     .carousel_content{
@@ -704,6 +717,17 @@
     .carousel_btn{
         margin-top: 20px;
         width: 40%;
+    }
+
+    .slider{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 }
