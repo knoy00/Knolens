@@ -790,19 +790,10 @@
 
 }
 
-@media only screen and (max-width: 910px) {
+
+
+@media only screen and (min-width: 730px) and (max-width: 910px) and (orientation: portrait) {
     .header_container{
-        background-color: #ffe100;
-       
-    }
-}
-
-
-
-
-@media only screen and (min-width: 730px) and (max-width: 910px){
-    .header_container{
-        background-color: rgb(255, 214, 214);
         
     }
     .logo{
@@ -823,5 +814,52 @@
     .hero_top h1{
         text-align: center;
         
+    }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 910px) and (orientation: landscape) {
+    .header_container {
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .hero_top {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_top p {
+        width: 100%;
+        text-align: center;
+    }
+    .hero_top h1 {
+        text-align: center;
+    }
+
+    .categories{
+        margin-top: 50px;
+        height: 240vh;
+    }
+
+    .collection{
+        margin-top: 30px;
+        height: 190vh;
+    }
+
+    .shop{
+        height: 390vh;
+    }
+
+    .grid_items{
+        height: 50vh;
+    }
+
+    .footer{
+        height: 140vh;
+    }
+
+    .footer_right{
+        height: 50vh;
+        margin-top: 100px ;
     }
 }
