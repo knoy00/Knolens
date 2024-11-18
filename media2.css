@@ -1,0 +1,173 @@
+/* General Responsive Design */
+
+/* Extra Small Devices (Portrait Phones) */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-links {
+        display: none; /* Hide the links by default for smaller screens */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    .search-user {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 20px;
+        height: auto; /* Adjust height */
+    }
+
+    .hero_top h1 {
+        font-size: 24px;
+    }
+
+    .hero_top p {
+        font-size: 16px;
+        width: 100%; /* Full width */
+    }
+
+    .categories_img {
+        flex-direction: column; /* Stack categories vertically */
+        gap: 20px;
+    }
+
+    .category_item {
+        height: 50vh; /* Adjust size */
+    }
+
+    .shop {
+        height: auto; /* Allow dynamic height */
+        padding: 20px;
+    }
+
+    .grid_container {
+        grid-template-columns: 1fr; /* Single column grid */
+        gap: 20px;
+    }
+
+    .carousel_section {
+        height: auto;
+    }
+
+    .carousel_header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero_top h1 {
+        font-size: 32px;
+    }
+
+    .hero_top p {
+        font-size: 18px;
+        width: 60%;
+    }
+
+    .categories_img {
+        gap: 30px;
+    }
+
+    .category_item {
+        height: 60vh;
+    }
+
+    .grid_container {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 30px;
+    }
+
+    .carousel_section {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+/* Medium Devices (Laptops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 25px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero_top h1 {
+        font-size: 36px;
+    }
+
+    .categories_img {
+        gap: 40px;
+    }
+
+    .category_item {
+        height: 65vh;
+    }
+
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr); /* Two-column grid */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media only screen and (min-width: 1025px) {
+    .navbar {
+        padding: 10px 40px;
+    }
+
+    .nav-links {
+        gap: 50px;
+    }
+
+    .hero {
+        padding: 50px;
+    }
+
+    .hero_top h1 {
+        font-size: 41px;
+    }
+
+    .categories_img {
+        gap: 50px;
+    }
+
+    .category_item {
+        height: 70vh;
+    }
+
+    .grid_container {
+        grid-template-columns: repeat(3, 1fr); /* Three-column grid */
+    }
+}

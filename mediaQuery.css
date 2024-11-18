@@ -789,3 +789,10 @@
 
 
 }
+
+@media only screen and (max-width: 896px) {
+    .header_container{
+        background-color: #ffe100;
+       
+    }
+}
