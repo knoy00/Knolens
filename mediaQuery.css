@@ -790,9 +790,38 @@
 
 }
 
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 910px) {
     .header_container{
         background-color: #ffe100;
        
+    }
+}
+
+
+
+
+@media only screen and (min-width: 730px) and (max-width: 910px){
+    .header_container{
+        background-color: rgb(255, 214, 214);
+        
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+
+    .hero_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_top p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_top h1{
+        text-align: center;
+        
     }
 }
