@@ -1,5 +1,3 @@
-
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,13 +20,14 @@ body{
     background-color: rgb(255, 0, 0);
     width: 100%;
     max-width: max-content;
-    height: 10vh;
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 0 20px;
+    padding: 30px 20px;
     box-shadow: 0px 9px 11px -3px rgba(0, 0, 0, 0.263);
     z-index: 10;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
 }
 
 .message p{
@@ -40,6 +39,16 @@ body{
     font-size: 16px;
     color: #fff;
     cursor: pointer;
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+.message i:hover{
+    background-color: #fff;
+    color: #ff0000;
 }
 
 .darkMode{
@@ -55,7 +64,7 @@ body{
 
 .header_container{
     width: 100%;
-    height: 13vh;
+    height: auto;
     padding: 10px;
     box-shadow: 0px 9px 11px -3px rgba(0,0,0,0.1);
     position: fixed;
@@ -83,6 +92,8 @@ body{
     padding: 10px;
     text-align: center;
     transition: .4s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .logo a{
@@ -117,11 +128,12 @@ body{
     content: '';
     position: absolute;
     width: 0;
-    height: 1.5px;
+    height: 3px;
     left: 0;
     bottom: -5px;
     transition: width .5s ease-in-out;
     background-color: var(--secondary-color);
+    border-radius: 30px;
 }
 
 .nav-links li a:hover::after {
@@ -131,8 +143,10 @@ body{
 .search-user {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     width: 30%;
+   
 }
 
 .search-bar {
@@ -173,12 +187,11 @@ body{
 /**************************** Hero Section *************************/
 
 .hero{
-    height: 130vh;
+    height: auto !important;
     width: 100%;
     padding: 50px;
     padding-top: 15vh;
     text-align: center;
-    background-color: #ffffff;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -209,6 +222,7 @@ body{
     border-radius: 20px;
     filter: brightness(100%);
     text-align: center;
+    position: relative;
 }
 
 .hero_image img{
@@ -230,10 +244,12 @@ body{
     width: 10%;
     justify-content: center;
     position: absolute;
-    left: 45%;
+    left: 50%;
     bottom: 30%;
     cursor: pointer;
     transition: .4s ease-in-out;
+    transform: translateX(-50%);
+    transform-origin: center;
 }
 
 .hero_btn p{
@@ -252,15 +268,15 @@ body{
     background: transparent;
     color: white;
     border: 2px solid #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.1) translateX(-50%);
 }
 
 /* Categories */
 
 .categories{
-    height: 90vh;
+    height: auto;
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px;
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -337,29 +353,30 @@ body{
 }
 
 .category_text{
-    display: flex;
-    align-items: center;
-    width: 10%;
-    justify-content: center;
+    width: 100%;
     position: absolute;
     left: 45%;
     bottom: 10%;
     transform: translate(-50%);
     color: #ffffff;
-
+    margin-left: 21px;
 }
 
 .category_text h3{
     filter: none;
     font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* COLLECTION */
 
 .collection{
-    height: 80vh;
+    height: auto !important;
     width: 100%;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .collection_top h2{
@@ -424,7 +441,7 @@ body{
 
 /* SHOP */
 .shop{
-    height: 200vh;
+    height: auto;
     width: 100%;
     padding: 40px;
     background-color: #000000;
@@ -500,7 +517,7 @@ body{
 .carousel_section{
     padding: 40px;
     width: 100%;
-    height: 150vh;
+    height: auto;
     background-color: #c5c5c56a;
     text-align: center;
 }
@@ -646,7 +663,7 @@ body{
 /* FOOTER */
 .footer{
     width: 100%;
-    height: 70vh;
+    height: auto;
     padding: 100px 40px;
     background-color: #ffffff;
     overflow: hidden;  
@@ -662,10 +679,9 @@ body{
 
 .footer_links{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 50%;
-    height: 40vh;
+    height: auto;
 }
 
 .fl{
@@ -673,7 +689,18 @@ body{
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    height: 30vh;
+    height: auto;
+}
+
+.link_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link_title i{
+    display: none;
+    font-size: 16px;
 }
 
 .fl h2{
@@ -706,7 +733,7 @@ body{
 
 .footer_right{
     width: 30%;
-    height: 30vh;
+    height: auto;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 20px;
@@ -803,4 +830,10 @@ body{
 
 @media (prefers-color-scheme:light){
 
+}
+
+
+.brightness{
+    filter: brightness(30%);
+    transition: .2s ease-in-out;
 }
